@@ -22,7 +22,7 @@ try {
         [ErrorA]: () => console.log('Error type A'),
         [ErrorB]: () => console.log('Error type B')
     };
-    // Be prepare the case that the `errorMap` doesn't have the key about `e`
+    // Prepare the case that the `errorMap` doesn't have the key about `e`
     (errorMap[e.constructor] | () => {})();
 }
 
