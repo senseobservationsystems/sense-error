@@ -1,0 +1,25 @@
+{
+  "name": "@sense-os/error",
+  "version": "0.0.0",
+  "description": "Inharitable error class",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senseobservationsystems/sense-error.git"
+  },
+  "keywords": [
+    "error"
+  ],
+  "author": "BY Kim <byoungyong@sense-os.nl>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/senseobservationsystems/sense-error/issues"
+  },
+  "homepage": "https://github.com/senseobservationsystems/sense-error#readme",
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  }
+}
