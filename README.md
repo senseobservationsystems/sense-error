@@ -30,6 +30,6 @@ try {
         [ErrorB]: () => console.log('Error type B')
     };
     // Prepare the case that the `errorMap` doesn't have the key about `e`
-    (errorMap[e.constructor] | () => {})();
+    (errorMap[e] | () => {})();
 }
 ```
