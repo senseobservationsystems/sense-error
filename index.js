@@ -11,6 +11,7 @@ const SenseError = function(args) {
 };
 SenseError.prototype = Object.create(Error.prototype);
 SenseError.prototype.constructor = SenseError;
+SenseError.prototype.toString = function() { return this.constructor.toString() };
 SenseError.toString = function() { return this.name; };
 
 module.exports = SenseError;

@@ -22,7 +22,7 @@ describe('Identifying the Error', () => {
                 [ErrorB]: () => expect().nothing()
             };
             expect(errorMap.hasOwnProperty('ErrorB')).toBe(true);
-            errorMap[e.constructor]();
+            errorMap[e]();
         }
     });
 });
