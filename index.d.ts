@@ -28,9 +28,11 @@ try {
 
 ***********************************************************************************************************************/
 
-export default class SenseError extends Error {
+declare class SenseError extends Error {
     constructor(args?: { message?: string, details?: any } | string)
 
     message: string;
     details: any;
 }
+
+export = SenseError;
