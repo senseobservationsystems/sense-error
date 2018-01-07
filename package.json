@@ -4,7 +4,8 @@
   "description": "Inharitable error class",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "eslint": "eslint ."
   },
   "repository": {
     "type": "git",
