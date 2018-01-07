@@ -37,7 +37,7 @@ try {
 
 ### Importing based on environment
 
-#### On Node.js (and packagers that understand `require` and `module.exports`) environment
+#### On Node.js (and the packagers that understand `require` and `module.exports`) environment
 
 ```
 var SenseError = require('@sense/error');
@@ -49,7 +49,7 @@ var SenseError = require('@sense/error');
 import SenseError = require('@sense/error');
 ```
 
-##### With the `target` [compiler option] `es2015` or higher(https://www.typescriptlang.org/docs/handbook/compiler-options.html)
+##### With the `target` [compiler option](https://www.typescriptlang.org/docs/handbook/compiler-options.html) `es2015` or higher
 
 ```
 import * as SenseError from '@sense/error';
