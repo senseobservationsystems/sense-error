@@ -1,10 +1,10 @@
 /***********************************************************************************************************************
 Example in TypeScript:
 
-import SenseError from '@sense/error';
+import * as SenseError from '@sense/error';
 
-class ErrorA extends SError {};
-class ErrorB extends SError {};
+class ErrorA extends SenseError {};
+class ErrorB extends SenseError {};
 
 try {
     throw new ErrorB();
@@ -28,9 +28,11 @@ try {
 
 ***********************************************************************************************************************/
 
-export default class SenseError extends Error {
+declare class SenseError extends Error {
     constructor(args?: { message?: string, details?: any } | string)
 
     message: string;
     details: any;
 }
+
+export = SenseError;
