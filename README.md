@@ -8,10 +8,11 @@ Run `npm install @sense-os/error --save`.
 ## How to use
 
 ```javascript
-import SenseError from '@sense/error';
+// Importing can be different based on the environment. Please check the next section in the README
+import * from SenseError from '@sense/error';
 
-class ErrorA extends SError {};
-class ErrorB extends SError {};
+class ErrorA extends SenseError {};
+class ErrorB extends SenseError {};
 
 try {
     throw new ErrorA();
@@ -32,4 +33,29 @@ try {
     // Prepare the case that the `errorMap` doesn't have the key about `e`
     (errorMap[e] | () => {})();
 }
+```
+
+### Importing based on environment
+
+#### On Node.js (and packagers that understand `require` and `module.exports`) environment
+
+```
+var SenseError = require('@sense/error');
+```
+
+#### On TypeScript environment
+
+```
+import SenseError = require('@sense/error');
+```
+
+##### With the `target` [compiler option] `es2015` or higher(https://www.typescriptlang.org/docs/handbook/compiler-options.html)
+
+```
+import * as SenseError from '@sense/error';
+```
+
+If you turn the `allowSyntheticDefaultImports` compiler option `true`, you can import with:
+```
+import SenseError from `@sense/error';
 ```
