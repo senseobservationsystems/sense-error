@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/senseobservationsystems/sense-error#readme",
   "devDependencies": {
+    "eslint": "^4.15.0",
     "jasmine": "^2.8.0"
   }
 }
