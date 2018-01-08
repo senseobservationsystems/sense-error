@@ -4,7 +4,8 @@
   "description": "Inharitable error class",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "eslint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/senseobservationsystems/sense-error#readme",
   "devDependencies": {
+    "eslint": "^4.15.0",
     "jasmine": "^2.8.0"
   }
 }
